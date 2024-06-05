@@ -1,4 +1,4 @@
-# profiler
+# PARISCV profiler
 Instruction profiler that suggests extensions, sub-instructions.
 
 # Getting Started
