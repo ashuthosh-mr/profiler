@@ -38,15 +38,20 @@ To install PARISCV, follow these steps:
     unxz internal_folder.tar.xz
     tar -xvf internal_folder.tar
     ```
+4. Change the permission of ext1 and pariscv.sh:
 
-4. To profile the region of interest in the application, place this line before the kernel:
+   ```bash
+   chmod +x pariscv.sh
+   chmod +x ext1
+   ```
+5. To profile the region of interest in the application, place this line before the kernel:
 
     ```bash
     unsigned long cycles_start,cycles_end;
     asm volatile ("rdcycle %0" : "=r" (cycles_start));
     ```
 
-5. Similarly, place thhis line after the kernel.
+6. Similarly, place thhis line after the kernel.
 
    ```bash
    asm volatile ("rdcycle %0" : "=r" (cycles_end));
