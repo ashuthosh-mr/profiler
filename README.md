@@ -41,8 +41,7 @@ To install PARISCV, follow these steps:
 4. Change the permission of ext1 and pariscv.sh:
 
    ```bash
-   chmod +x pariscv.sh
-   chmod +x ext1
+   chmod +x pariscv.sh ext1
    ```
 5. To profile the region of interest in the application, place this line before the kernel:
 
