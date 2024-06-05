@@ -29,7 +29,7 @@ To install PARISCV, follow these steps:
 2. Navigate to the project directory:
 
     ```bash
-    cd pariscv
+    cd profiler
     ```
 
 3. Unzip the necesary library files:
