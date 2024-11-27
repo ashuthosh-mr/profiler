@@ -30,6 +30,6 @@ echo "ISA: $ISA, MABI: $MABI, SOURCE: $SOURCE"
 
 
 riscv64-unknown-elf-gcc -O3 -march="$ISA" -mabi="$MABI" "$SOURCE"
-spike -l --isa=rv64gcv_zicntr_zihpm_zicsr_zifencei_zba_zbb_zbc pk a.out 2> spike.txt
+spike -l --isa=rv64gcv_zicntr_zihpm_zicsr_zifencei_zba_zbb_zbc $(which pk) a.out 2> spike.txt
 ./ext1
 
